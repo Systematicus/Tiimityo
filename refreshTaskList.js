@@ -8,6 +8,11 @@ function refreshList() {
     return;
   }
 
+  // Kootaan taulukon HTML tekstinä: ensin otsikkorivi...
+  let html = "<table style='width: 100%; text-align: left;'>";
+  html += "<tr><th>Task</th><th>Status</th><th>Created</th><th>Last updated</th></tr>";
+
+  // ...ja sitten yksi rivi jokaisesta tehtävästä
   for (let i = 0; i < tasks.length; i++) {
     const tehtava = tasks[i];
 
