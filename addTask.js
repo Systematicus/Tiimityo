@@ -1,4 +1,4 @@
-//Funktiolla listätään uusi tehtävä taulukkoon
+// Funktiolla lisätään uusi tehtävä taulukkoon
 function addTask() {
   const input = document.getElementById("taskName");
   const name = input.value.trim();
@@ -6,11 +6,15 @@ function addTask() {
   if (name === "") {
     alert("Please enter a task name.");
     return;
- 
   }
- {
 
-  tasks.push({ name: name, status: "Not Started" });
+  tasks.push({
+    nimi: name,
+    tila: "Not Started",
+    luotu: new Date().toLocaleString(),
+    paivitetty: null
+  });
+
   input.value = "";
   refreshList();
 }
