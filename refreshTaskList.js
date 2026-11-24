@@ -1,6 +1,6 @@
 //Funktio päivittää tehtävälistan (task list)
 function refreshList() {
-  const listaAlue = document.getElementById("tasksList");
+  const listaAlue = document.getElementById("taskName");
 
   // Jos tehtäviä ei ole, näytetään pelkkä teksti
   if (tasks.length === 0) {
