@@ -16,8 +16,7 @@ function updateTaskInformation() {
 
       // Tallennetaan päivitysajankohta
       tasks[i].paivitetty = new Date().toLocaleString();
-
-      // Päivitetään tehtävälista
+      
       refreshList();
 
       return;
